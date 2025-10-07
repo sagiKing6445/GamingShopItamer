@@ -1,0 +1,43 @@
+<!-- <div class="container">
+ 
+<div class="table">    
+    
+    <p>{{ proArr[0].name + ',' + proArr[0].price  }}</p>
+
+</div>
+<div class="table2"> 
+<label>
+    
+    <input type="checkbox" [(ngModel)]="proArr[0].checkout" />
+    
+    Check me!
+</label>
+</div>
+<img src=proArr[0].gameImage alt="My Image">
+
+</div> -->
+
+<div class="container-warp">
+<div *ngFor="let item of proArr">
+  <app-product [pro]="item"></app-product>
+</div>
+
+
+<div class="container-names" >
+  <p style="text-align:center;">wishlist of your games</p>
+  <hr style="width:130px; height:5px; background-color:black; border:none;">
+  <div class = "checkout">
+  {{ AddToSum(proArr)}}
+  <p>the sum of your checkout is: {{this.sum}}</p>
+</div>
+  <hr style="width:130px; height:5px; background-color:black; border:none;">
+  <div *ngFor="let item2 of proArr">
+    <div *ngIf="item2.checkout" style="margin: 0px;">
+
+      <p>{{ item2.name }}</p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
