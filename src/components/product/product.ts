@@ -1,6 +1,6 @@
 
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { CommonModule } from '@angular/common';  // Required for ngIf, ngFor
+import { CommonModule } from '@angular/common';  
 import {Product} from '../../product/product';
 import { FormsModule } from '@angular/forms';
 
