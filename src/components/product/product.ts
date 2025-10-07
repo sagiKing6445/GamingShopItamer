@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
 
   selector: 'app-product',
-  // imports: [CommonModule,Product],
   imports: [CommonModule,FormsModule],
   templateUrl: './product.html',
   styleUrls: ['./product.css']  
@@ -30,13 +29,4 @@ export class ProductComponent {
     
   }
 
-
-  // onNotify(message: string) {
-  //   alert('ההודעה מהקומפוננטה הילדית: ' + message);
-  // }
-
-
-  // sendNotification() {
-  //   this.notify.emit(`הודעה מ־${this.studentName}`);
-  // }
 
