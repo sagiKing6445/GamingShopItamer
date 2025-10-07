@@ -1,7 +1,8 @@
 <!-- <body> -->
 
 <div class="container"> 
-    <img src= pro.gameImage alt="My Image">
+    <img [src]= "pro.gameImage" alt="My Image">
+<div class="bottom"> 
 
 <div class="table">    
     
@@ -17,11 +18,16 @@
 <div class="table3"> 
 <label>
     
-    <input type="checkbox" [(ngModel)]="pro.checkout" />
+    <input type="checkbox" [(ngModel)]="pro.checkout" (change)="sendNotification()" />
+
     
     Check
 </label>
 </div>
-
+</div>
 </div>
 <!-- </body> -->
+ 
+<!-- CopyEdit
+<p>שלום, אני הקומפוננטה הילדית. השם הוא: {{ studentName }}</p>
+<button (click)="sendNotification()">שלח הודעה להורה</button> -->

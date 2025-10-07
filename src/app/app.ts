@@ -10,11 +10,12 @@ import {ProductComponent} from '../components/product/product';
   imports: [RouterOutlet,FormsModule,ProductComponent,CommonModule],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
+  
 })
 export class App {
   sum =0;
   proArr = 
-  [ new Product('ghost of yotei',70,false,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwnyt8Tln9rxJM9P4WE_-Rjn_Ikd4R0ZVG7SYmD_J_1AezlNH_sWDUT97PhDu4AVKswM8zPmUviDCMuBE'),
+  [ new Product('ghost of yotei',70,false,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSy-pCMV_O2r2lCMaHdcVkpNVMJhX_kbJFFzgsVE3tYY6Nqvtrc8Gi-p73LJwFM_y46tScV'),
     new Product('doom the dark ages',70,false,'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSa35T6R4Wu5tiy_usoDbhFCaMg0RbHgPRYQXNgUhEXB4MdQ32aaYh-mAE7X6-bVC61_likJQ'),
     new Product('split fiction',50,false,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Y4RBf-aYwSQb_UKl_zMtMJdb0DOyU-DbgCr_NoVTMDl_AEkMqGAoAazLNTtYYjuCHcvS'),
   new Product('expdition 33',70,false,'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrUsfBxfPMYJN_au0TpmDpM-B7UKz0y-g4orgNCpcbjuddHyitTPb5BMPaYnbIxv6p_Tm0'),
@@ -48,5 +49,10 @@ export class App {
         i++;
       }
       
-    } 
-}
+  
+  }
+    onNotify(message: string) {
+      alert('enjoy your purchase ' + message);
+      }
+  } 
+    

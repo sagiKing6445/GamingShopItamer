@@ -12,7 +12,7 @@ body{
   padding: 0rem;
   margin: 1rem;
   width: 300px;
-  height: 250px;
+  height: 420px;
   float: left;  
      
   border: 2px solid #333; 
@@ -21,22 +21,25 @@ body{
   background-color: #f9f9f9; 
   font-family: Arial, sans-serif;
 
-  display: flex; 
-  align-items: flex-end;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  
    
   }
   .container .bottom{
-    margin: 1rem;
-    padding: 20px 0;
-    width: 300px;
-    height: 100px;  
+    display: flex; 
+    align-items: flex-end;
+    justify-content: space-between;
   }
-  img{
-    top: 0;
-
+   img{
+    
+  float: left;
+  width: 100%;
+  height: 370px;       
+  object-fit: cover;
+  object-position: center;
   }
- .container .table {
+ .container .bottom .table {
         flex-grow: 1;
         flex-basis: auto;
         width: 100px;
@@ -47,13 +50,13 @@ body{
 
         
 }
- .container .table2 {
+ .container .bottom .table2 {
         width: 50px; 
         height: 40px;
         border: 2px solid #333;
         padding: 5px;
  }
-  .container .table3 {
+  .container .bottom .table3 {
         height: 40px;
         width: 80px; 
 

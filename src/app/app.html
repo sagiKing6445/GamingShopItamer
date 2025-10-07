@@ -16,10 +16,11 @@
 <img src=proArr[0].gameImage alt="My Image">
 
 </div> -->
+<div class="header"> welcome to sagi's gaming shop</div>
 
-<div class="container-warp">
+<div class="background">
 <div *ngFor="let item of proArr">
-  <app-product [pro]="item"></app-product>
+  <app-product [pro]="item" (notify)= "onNotify($event)"></app-product>
 </div>
 
 
@@ -40,4 +41,4 @@
 </div>
 
 
-  </div>
+  </div>  

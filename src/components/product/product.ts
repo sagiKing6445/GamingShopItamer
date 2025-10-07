@@ -23,8 +23,20 @@ export class ProductComponent {
     public notify: EventEmitter<string> = new EventEmitter<string>();
   
     sendNotification() {
-      this.pro.checkout = !this.pro.checkout;
+       if (this.pro.checkout) {
+      this.notify.emit(`${this.pro.name}`);
+       }
     }
     
   }
+
+
+  // onNotify(message: string) {
+  //   alert('ההודעה מהקומפוננטה הילדית: ' + message);
+  // }
+
+
+  // sendNotification() {
+  //   this.notify.emit(`הודעה מ־${this.studentName}`);
+  // }
 
