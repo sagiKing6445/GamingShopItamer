@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {Product} from '../product/product';
-import { CommonModule } from '@angular/common';  // Required for ngIf, ngFor
+import { CommonModule } from '@angular/common'; 
 import {ProductComponent} from '../components/product/product';
 @Component({
   selector: 'app-root',
